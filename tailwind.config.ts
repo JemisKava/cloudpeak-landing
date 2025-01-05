@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(90deg, rgb(51, 70, 121) 0%, rgb(16, 22, 54) 100%)',
+        'hero-pattern': "url('/assets/shadow.svg')",
+      },
       fontFamily: {
         sora: ["var(--font-sora)", "sans-serif"],
       },
@@ -26,7 +30,7 @@ export default {
         "body-14": ["14px", { lineHeight: "1.7" }],
       },
       colors: {
-        background: "var(--background)",
+        background: "#05071A",
         foreground: "var(--foreground)",
         primary: "#3A6EF2",
         secondary: "#47CC88",

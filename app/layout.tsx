@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${sora.variable} antialiased`}>{children}</body>
+      <body className={`${sora.variable} antialiased bg-background`}>{children}</body>
     </html>
   );
 }
