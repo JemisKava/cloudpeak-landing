@@ -36,7 +36,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: "easeInOut" }}
           className="max-w-[820px] flex flex-col items-center gap-8 text-center"
         >
-          <h1 className="text-6xl font-semibold leading-tight tracking-tight">
+          <h1 className="text-6xl font-semibold leading-tight tracking-tight sm:text-4xl">
             Elevate Your Business with CloudPeak
           </h1>
           <p className="text-lg text-gray-400 max-w-[600px]">
