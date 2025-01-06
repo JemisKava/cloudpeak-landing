@@ -16,10 +16,10 @@ const About = () => {
           bounce: 0.5,
           delay: 0.5,
         }}
-        className="min-h-min flex flex-nowrap items-center justify-center gap-x-8"
+        className="min-h-min flex flex-wrap items-center justify-center gap-x-8 md:flex-col md:gap-y-4 sm:gap-y-6 sm:flex-col"
       >
         {/* content */}
-        <div className="flex flex-col w-[310px] mr-[50px] my-auto">
+        <div className="flex flex-col w-[310px] mr-[50px] my-auto md:mr-0">
           <h3 className="text-h3">We Help Transforms Your Business</h3>
           <p className="text-body-16 text-neutral-2">
             Our mission is to empower individuals and organizations to unleash
@@ -27,7 +27,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-8 flex-1">
+        <div className="grid grid-cols-2 gap-8 flex-1 md:grid-cols-1 sm:grid-cols-1 md:gap-y-4 sm:gap-y-6">
           {LEST.map((feature, index) => (
             <FeatureCard key={feature.title || index} {...feature} />
           ))}
