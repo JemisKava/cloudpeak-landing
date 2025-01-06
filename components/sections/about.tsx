@@ -16,7 +16,7 @@ const About = () => {
           bounce: 0.5,
           delay: 0.5,
         }}
-        className="min-h-min flex flex-wrap items-center justify-center gap-x-8 md:flex-col md:gap-y-4 sm:gap-y-6 sm:flex-col"
+        className="min-h-min flex flex-wrap items-center justify-center gap-x-8 md:flex-col md:gap-y-4 sm:gap-y-6 sm:flex-col sm:items-baseline"
       >
         {/* content */}
         <div className="flex flex-col w-[310px] mr-[50px] my-auto md:mr-0">
