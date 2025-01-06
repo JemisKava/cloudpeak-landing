@@ -41,6 +41,9 @@ export default {
           4: "#05071A",
         },
       },
+      boxShadow: {
+        'custom-inset': 'inset 0 -10px 40px #101636'
+      },
       screens: {
         sm: { max: "767px" },
         md: { min: "768px", max: "1199px" },

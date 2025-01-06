@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import * as motion from "motion/react-client";
 
-const HeroSection = () => {
+const Hero = () => {
   return (
     <main className="relative min-h-screen bg-[#0B0F1F] text-white overflow-hidden">
       {/* SVG Background (bottom layer) */}
@@ -94,4 +94,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Hero;
