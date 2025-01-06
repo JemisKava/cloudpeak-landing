@@ -1,6 +1,6 @@
 import { LEST } from "@/constants";
-import FeatureCard from "../feature-card";
 import * as motion from "motion/react-client";
+import LestCard from "../lest-card";
 
 const About = () => {
   return (
@@ -29,7 +29,7 @@ const About = () => {
 
         <div className="grid grid-cols-2 gap-8 flex-1 md:grid-cols-1 sm:grid-cols-1 md:gap-y-4 sm:gap-y-6">
           {LEST.map((feature, index) => (
-            <FeatureCard key={feature.title || index} {...feature} />
+            <LestCard key={feature.title || index} {...feature} />
           ))}
         </div>
       </motion.div>
