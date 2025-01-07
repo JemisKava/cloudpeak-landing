@@ -20,7 +20,7 @@ export const LEST = [
     alt: "running-star",
     title: "Streamlined Workflow",
     description:
-      "Effortlessly Collaborate Across Teams and Projects with CloudPeak&apos; Seamless and Intuitive Collaboration Tools",
+      "Effortlessly Collaborate Across Teams and Projects with CloudPeak&apos;s Seamless and Intuitive Collaboration Tools",
   },
   {
     logo: "/assets/running-star.svg",

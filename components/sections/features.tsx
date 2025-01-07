@@ -4,10 +4,10 @@ import { FeatureCard } from '../feature-card'
 
 const Features = () => {
   return (
-    <section className='pt-[130px] px-[30px] mt-8'>
-      <div className='max-w-screen-xl mx-auto h-screen text-center'>
+    <section className='py-[130px] px-[30px] mt-8'>
+      <div className='max-w-screen-xl mx-auto text-center'>
         <div className='flex flex-col gap-y-4 mx-60 sm:mx-0 md:mx-0 items-center'>
-          <h1 className='text-h2 text-neutral-1'>
+          <h1 className='text-h2 text-neutral-1 sm:text-h2-40'>
             Get Connected Fast
           </h1>
           <p className='text-body-16 text-neutral-2'>
@@ -15,7 +15,7 @@ const Features = () => {
           </p>
         </div>
 
-        <div className="grid gap-6 grid-cols-2 md:grid-cols-1 sm:grid-cols-1 p-6 mt-[60px] ">
+        <div className="grid gap-6 grid-cols-2 md:grid-cols-1 sm:grid-cols-1 p-6 mt-[60px] sm:p-0">
           {FEATURE_CARDS.map((cardProps, index) => (
             <FeatureCard key={index} {...cardProps} />
           ))}

@@ -34,7 +34,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
-          className="max-w-[820px] flex flex-col items-center gap-8 text-center"
+          className="max-w-[820px] flex flex-col items-center gap-8 text-center sm:p-6"
         >
           <h1 className="text-6xl font-semibold leading-tight tracking-tight sm:text-4xl">
             Elevate Your Business with CloudPeak
