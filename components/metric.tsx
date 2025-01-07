@@ -7,7 +7,7 @@ export function Metric({ value, label, growth }: MetricProps) {
         <h2 className="text-h2-40 tracking-tight ">{value}</h2>
         {growth && (
           <span className="text-sm text-gray-500 flex items-center gap-0.5">
-            <TrendingUp className="h-4 w-4" />
+            <TrendingUp className="h-6 w-6 text-blue-600" />
             {growth.value}%
           </span>
         )}

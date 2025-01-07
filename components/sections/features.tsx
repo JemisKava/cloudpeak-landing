@@ -6,7 +6,7 @@ const Features = () => {
   return (
     <section className='pt-[130px] px-[30px] mt-8'>
       <div className='max-w-screen-xl mx-auto h-screen text-center'>
-        <div className='flex flex-col gap-y-4 mx-60'>
+        <div className='flex flex-col gap-y-4 mx-60 sm:mx-0 md:mx-0 items-center'>
           <h1 className='text-h2 text-neutral-1'>
             Get Connected Fast
           </h1>

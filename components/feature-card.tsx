@@ -4,6 +4,7 @@ import { Metric } from "./metric";
 import { FeatureList } from "./feature-list";
 import Card from "./card";
 import { cn } from "@/lib/utils";
+import * as motion from "motion/react-client"
 
 export function FeatureCard({
   title,
@@ -14,9 +15,17 @@ export function FeatureCard({
 }: FeatureCardProps) {
   return (
     <Card>
-      <div className="relative flex flex-col flex-nowrap gap-2.5 h-full w-full mx-[15px] my-1  overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0 ">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{
+          duration: 0.7,
+          ease: [0.25, 0.1, 0.25, 1]
+        }}
+        className="relative flex flex-col flex-nowrap gap-2.5 h-full mx-[15px] my-1 overflow-hidden sm:mx-0"
+      >
+        <div className="absolute inset-0 z-0 p-[350px]">
           <Image
             src="/assets/square-block.png"
             alt="Background pattern"
@@ -24,13 +33,11 @@ export function FeatureCard({
             className="object-cover -mt-36"
           />
         </div>
-
         <div className="relative z-10">
-          <div className="text-start">
-            <h2 className="text-h3 text-neutral-1 mb-2">{title}</h2>
+          <div className="text-start p-2">
+            <h2 className="text-h3 text-neutral-1 mb-2 sm:text-h4">{title}</h2>
             <p className="text-gray-600 mb-6">{description}</p>
           </div>
-
           <Metric {...metric} />
           {integrationIcons && (
             <>
@@ -57,7 +64,7 @@ export function FeatureCard({
           )}
           {features && <FeatureList features={features} />}
         </div>
-      </div>
+      </motion.div>
     </Card>
   );
 }
