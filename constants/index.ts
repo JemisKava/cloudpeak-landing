@@ -1,4 +1,4 @@
-import { IntegrationIconProps, FeatureCardProps, CoreFeatureCardProps } from "@/types";
+import { IntegrationIconProps, FeatureCardProps, CoreFeatureCardProps, PlanData } from "@/types";
 
 export const NAV_LINKS = [
   { label: "Features", href: "#features" },
@@ -97,4 +97,47 @@ export const CORE_FEATURE_CARDS: CoreFeatureCardProps[] = [
   { img: '/assets/chart.svg', alt: 'chart', title: 'Effortless Onboarding Process Fast.', description: 'Discover Our Streamlined and User-Friendly Onboarding Process, Designed to Get You Up and Running Quickly and Efficiently.', metric: { value: '25%', label: 'Average revenue growth', growth: { value: 9.2, trend: "up" } } },
   { img: '/assets/weekly-data-spider.svg', alt: 'weekly-data-spider', title: 'Seamless Integration with Your Workflow.', description: 'Learn How CloudPeak Seamlessly Integrates with Your Existing Systems and Processes, Ensuring Minimal Maximum Efficiency.' },
   { img: '/assets/monthly-trends-graph.svg', alt: 'monthly-trends-graph', title: 'Expert Guidance Every Step of the Way.', description: 'Experience a Guided Onboarding Experience with CloudPeak, Where Our Expert Team Provides Personalized Support and Assistance.', metric: { value: '120k+', label: 'Happy customers worldwide', growth: { trend: 'up', value: 9.2 } } }
-] 
+]
+
+export const PLANS: PlanData[] = [{
+  title: 'Basic',
+  description: 'For solo designer',
+  price: '$19',
+  frequency: 'per person, per month',
+  features: [
+    { icon: '/assets/checkmark.svg', text: 'Comprehensive Dashboard' },
+    { icon: '/assets/checkmark.svg', text: 'Advanced Analytics' },
+    { icon: '/assets/checkmark.svg', text: 'User Management' },
+    { icon: '/assets/checkmark.svg', text: 'Custom Branding' },
+    { icon: '/assets/checkmark.svg', text: 'Priority Support' },
+  ],
+  buttonText: 'Get Started',
+}, {
+  title: 'Premium',
+  description: 'For solo designer',
+  price: '$39',
+  frequency: 'per person, per month',
+  features: [
+    { icon: '/assets/checkmark.svg', text: 'Comprehensive Dashboard' },
+    { icon: '/assets/checkmark.svg', text: 'Advanced Analytics' },
+    { icon: '/assets/checkmark.svg', text: 'User Management' },
+    { icon: '/assets/checkmark.svg', text: 'Custom Branding' },
+    { icon: '/assets/checkmark.svg', text: 'Priority Support' },
+  ],
+  buttonText: 'Get Started'
+},
+{
+  title: 'Standard',
+  description: 'For solo designer',
+  price: '$99',
+  frequency: 'per person, per month',
+  features: [
+    { icon: '/assets/checkmark.svg', text: 'Comprehensive Dashboard' },
+    { icon: '/assets/checkmark.svg', text: 'Advanced Analytics' },
+    { icon: '/assets/checkmark.svg', text: 'User Management' },
+    { icon: '/assets/checkmark.svg', text: 'Custom Branding' },
+    { icon: '/assets/checkmark.svg', text: 'Priority Support' },
+  ],
+  buttonText: 'Get Started'
+}
+];

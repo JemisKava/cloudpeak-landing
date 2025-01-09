@@ -36,3 +36,17 @@ export interface CoreFeatureCardProps {
   description: string,
   metric?: MetricProps
 }
+
+export interface FeatureItem {
+  icon: string;
+  text: string;
+}
+
+export interface PlanData {
+  title: string;
+  description: string;
+  price: string;
+  frequency: string;
+  features: FeatureItem[];
+  buttonText: string;
+}
