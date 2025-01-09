@@ -10,7 +10,7 @@ interface LestCardProps {
 const LestCard = ({ title, logo, description }: LestCardProps) => (
   <Card>
     <div className="text-center flex flex-col gap-y-4 items-center justify-center p-6">
-      <div className="h-[60px] w-[60px] rounded-full bg-[#101636] relative flex items-center justify-center">
+      <div className="h-[60px] w-[60px] rounded-full bg-card relative flex items-center justify-center">
         <Image
           src={logo}
           alt={title}

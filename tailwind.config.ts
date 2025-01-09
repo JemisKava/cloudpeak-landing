@@ -40,6 +40,7 @@ export default {
           3: "#0A0E28",
           4: "#05071A",
         },
+        card: "#101636"
       },
       boxShadow: {
         'custom-inset': 'inset 0 -10px 40px #101636'

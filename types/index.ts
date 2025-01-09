@@ -28,3 +28,11 @@ export interface FeatureCardProps {
   features?: FeatureProps[];
   integrationIcons?: IntegrationIconProps[];
 }
+
+export interface CoreFeatureCardProps {
+  img: string,
+  alt: string,
+  title: string,
+  description: string,
+  metric?: MetricProps
+}

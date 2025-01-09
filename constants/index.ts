@@ -1,4 +1,4 @@
-import { IntegrationIconProps, FeatureCardProps } from "@/types";
+import { IntegrationIconProps, FeatureCardProps, CoreFeatureCardProps } from "@/types";
 
 export const NAV_LINKS = [
   { label: "Features", href: "#features" },
@@ -92,3 +92,9 @@ export const FEATURE_CARDS: FeatureCardProps[] = [
     ],
   },
 ];
+
+export const CORE_FEATURE_CARDS: CoreFeatureCardProps[] = [
+  { img: '/assets/chart.svg', alt: 'chart', title: 'Effortless Onboarding Process Fast.', description: 'Discover Our Streamlined and User-Friendly Onboarding Process, Designed to Get You Up and Running Quickly and Efficiently.', metric: { value: '25%', label: 'Average revenue growth', growth: { value: 9.2, trend: "up" } } },
+  { img: '/assets/weekly-data-spider.svg', alt: 'weekly-data-spider', title: 'Seamless Integration with Your Workflow.', description: 'Learn How CloudPeak Seamlessly Integrates with Your Existing Systems and Processes, Ensuring Minimal Maximum Efficiency.' },
+  { img: '/assets/monthly-trends-graph.svg', alt: 'monthly-trends-graph', title: 'Expert Guidance Every Step of the Way.', description: 'Experience a Guided Onboarding Experience with CloudPeak, Where Our Expert Team Provides Personalized Support and Assistance.', metric: { value: '120k+', label: 'Happy customers worldwide', growth: { trend: 'up', value: 9.2 } } }
+] 
