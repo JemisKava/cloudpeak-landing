@@ -4,6 +4,7 @@ import CoreFeatures from "@/components/sections/core-features";
 import Features from "@/components/sections/features";
 import Hero from "@/components/sections/hero";
 import PricingAndPlans from "@/components/sections/pricing-plans";
+import Testimonials from "@/components/sections/testimonials";
 import Header from "@/components/shared/header";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Features />
       <CoreFeatures />
       <PricingAndPlans />
+      <Testimonials />
     </>
   );
 }

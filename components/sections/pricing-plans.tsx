@@ -17,7 +17,7 @@ const PricingAndPlans = () => {
           {
             PLANS.map((plan, key) => (
               <Card key={key} className='p-8 flex flex-col gap-10'>
-                <PricingPlanCard.Header title={plan.title} description={plan.description} />
+                <PricingPlanCard.Header title={plan.title} description={plan.description} popular={plan.popular} />
                 <PricingPlanCard.Price amount={plan.price} frequency={plan.frequency} />
                 <PricingPlanCard.FeatureList features={plan.features} />
                 <PricingPlanCard.Button text={plan.buttonText} />

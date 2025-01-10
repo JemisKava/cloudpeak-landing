@@ -45,8 +45,18 @@ export interface FeatureItem {
 export interface PlanData {
   title: string;
   description: string;
+  popular: boolean;
   price: string;
   frequency: string;
   features: FeatureItem[];
   buttonText: string;
+}
+
+export interface TestimonialCardProps {
+  quote: string;
+  author: {
+    name: string;
+    designation: string;
+    avatarUrl: string;
+  }
 }
