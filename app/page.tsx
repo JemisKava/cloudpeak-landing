@@ -1,6 +1,7 @@
 import About from "@/components/sections/about";
 import Brand from "@/components/sections/brand";
 import CoreFeatures from "@/components/sections/core-features";
+import Faq from "@/components/sections/faq";
 import Features from "@/components/sections/features";
 import Hero from "@/components/sections/hero";
 import PricingAndPlans from "@/components/sections/pricing-plans";
@@ -18,6 +19,7 @@ export default function Home() {
       <CoreFeatures />
       <PricingAndPlans />
       <Testimonials />
+      <Faq />
     </>
   );
 }

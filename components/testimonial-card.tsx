@@ -17,8 +17,6 @@ const TestimonialCard = ({ testimonial }: { testimonial: TestimonialCardProps })
         <Image src={testimonial.author.avatarUrl} alt='user' height={60} width={60} className='rounded-2xl' />
       </div>
     </Card>
-
-
   )
 }
 

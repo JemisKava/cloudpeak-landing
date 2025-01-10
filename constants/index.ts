@@ -188,3 +188,11 @@ export const TESTIMONIALS: TestimonialCardProps[] = [{
     avatarUrl: "/assets/user-6.png"
   }
 }]
+
+export const FAQ = [
+  { question: 'What is CloudPeak?', answer: 'CloudPeak is a cloud-based platform that offers a suite of software as a service (SaaS) solutions designed to streamline business operations, enhance collaboration, and drive productivity.' },
+  { question: 'What services does CloudPeak offer?', answer: 'CloudPeak is a cloud-based platform that offers a suite of software as a service (SaaS) solutions designed to streamline business operations, enhance collaboration, and drive productivity.' },
+  { question: 'What are the core features of CloudPeak?', answer: 'A down payment is the initial payment made by the homebuyer toward the purchase price of the property. The amount required for a down payment can vary depending on factors such as the type of mortgage and the lender&apos;s requirements' },
+  { question: 'How can CloudPeak help my business?', answer: 'The amount required for a down payment can vary depending on factors such as the type of mortgage and the lender&apos;s requirements.' },
+  { question: 'Is CloudPeak suitable for businesses of all sizes?', answer: 'A down payment is the initial payment made by the homebuyer toward the purchase price of the property. The amount required for a down payment can vary depending on factors such as the type of mortgage and the lender&apos;s requirements.' }
+]
