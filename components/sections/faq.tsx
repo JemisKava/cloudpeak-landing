@@ -17,7 +17,7 @@ const Faq = () => {
 
         {/* Left content: Title and description */}
         <div className="w-6/12 md:w-full md:text-center space-y-4 sm:w-full sm:text-center">
-          <h2 className="text-neutral-1 text-h2 tracking-wide">
+          <h2 className="text-neutral-1 text-h2 tracking-wide sm:text-h2-40">
             Common Questions
           </h2>
           <p className="text-body-16 text-neutral-2">
