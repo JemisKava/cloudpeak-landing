@@ -70,12 +70,12 @@ const Accordion = ({
   onToggle,
 }: AccordionProps) => {
   return (
-    <div className="flex flex-col gap-2 cursor-pointer">
+    <div className="flex flex-col gap-2 cursor-pointer mt-[30px]">
       <div
-        className="flex items-center justify-between p-4 rounded-lg transition-colors"
+        className="flex items-center justify-between  rounded-lg transition-colors"
         onClick={() => onToggle(index)}
       >
-        <p className="text-body-18">{question}</p>
+        <p className="text-body">{question}</p>
         <motion.div
           variants={iconVariants}
           animate={isOpen ? "open" : "closed"}
@@ -99,12 +99,13 @@ const Accordion = ({
             exit="exit"
             className="overflow-hidden"
           >
-            <div className="bg-neutral-3 rounded-2xl p-4">
-              <p>{answer}</p>
+            <div className="bg-neutral-3 rounded-2xl p-6">
+              <p className="text-neutral-2">{answer}</p>
             </div>
           </motion.div>
         )}
       </AnimatePresence>
+      <hr className="w-full border-gray-500 mt-4" />
     </div>
   );
 };
