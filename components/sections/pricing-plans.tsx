@@ -1,13 +1,21 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import * as motion from "motion/react-client";
 import { PLANS } from "@/constants";
 import { PricingPlanCard } from "../pricing-plans-cards";
 import Card from "../card";
+import Switch from "../switch";
 
 const PricingAndPlans = () => {
+  const [isYearly, setIsYearly] = useState(false);
+
+  const toggleSwitch = () => {
+    setIsYearly(!isYearly);
+  };
+
   return (
     <section
-      className=" max-w-screen-xl mx-auto md:px-[90px] sm:px-[25px]"
+      className="max-w-screen-xl mx-auto md:px-[90px] sm:px-[25px]"
       id="pricing"
     >
       <motion.div
@@ -26,6 +34,8 @@ const PricingAndPlans = () => {
         </p>
       </motion.div>
 
+      <Switch isYearly={isYearly} toggleSwitch={toggleSwitch} />
+
       <div>
         <div className="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-[30px]">
           {PLANS.map((plan, key) => (
@@ -36,8 +46,8 @@ const PricingAndPlans = () => {
                 popular={plan.popular}
               />
               <PricingPlanCard.Price
-                amount={plan.price}
-                frequency={plan.frequency}
+                amount={isYearly ? plan.yearlyPrice : plan.monthlyPrice}
+                frequency={isYearly ? "per year" : "per month"}
               />
               <PricingPlanCard.FeatureList features={plan.features} />
               <PricingPlanCard.Button text={plan.buttonText} />

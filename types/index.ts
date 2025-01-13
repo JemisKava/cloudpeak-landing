@@ -46,8 +46,8 @@ export interface PlanData {
   title: string;
   description: string;
   popular: boolean;
-  price: string;
-  frequency: string;
+  monthlyPrice: string;
+  yearlyPrice: string;
   features: FeatureItem[];
   buttonText: string;
 }
