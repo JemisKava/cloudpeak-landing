@@ -196,3 +196,11 @@ export const FAQ = [
   { question: 'How can CloudPeak help my business?', answer: 'The amount required for a down payment can vary depending on factors such as the type of mortgage and the lender&apos;s requirements.' },
   { question: 'Is CloudPeak suitable for businesses of all sizes?', answer: 'A down payment is the initial payment made by the homebuyer toward the purchase price of the property. The amount required for a down payment can vary depending on factors such as the type of mortgage and the lender&apos;s requirements.' }
 ]
+
+
+export const SOCIAL_LINKS = [
+  { src: '/assets/facebook.svg', alt: 'Facebook', height: 20, width: 20 },
+  { src: '/assets/instagram.svg', alt: 'Instagram', height: 20, width: 20 },
+  { src: '/assets/x.svg', alt: 'X (formerly Twitter)', height: 20, width: 20 },
+  { src: '/assets/linkdin.svg', alt: 'LinkedIn', height: 20, width: 20 }
+];

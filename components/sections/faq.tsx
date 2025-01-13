@@ -12,7 +12,7 @@ const Faq = () => {
   };
 
   return (
-    <section className="h-screen max-w-screen-xl mx-auto mt-[120px] md:mx-[120px] sm:mx-[30px]">
+    <section className="max-w-screen-xl mx-auto mt-[120px] md:mx-[120px] sm:mx-[30px]">
       <div className="w-full flex justify-between gap-6 md:flex-col md:gap-6 sm:flex-col sm:gap-6">
 
         {/* Left content: Title and description */}
