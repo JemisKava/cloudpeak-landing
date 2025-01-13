@@ -30,11 +30,11 @@ export interface FeatureCardProps {
 }
 
 export interface CoreFeatureCardProps {
-  img: string,
-  alt: string,
-  title: string,
-  description: string,
-  metric?: MetricProps
+  img: string;
+  alt: string;
+  title: string;
+  description: string;
+  metric?: MetricProps;
 }
 
 export interface FeatureItem {
@@ -58,5 +58,5 @@ export interface TestimonialCardProps {
     name: string;
     designation: string;
     avatarUrl: string;
-  }
+  };
 }

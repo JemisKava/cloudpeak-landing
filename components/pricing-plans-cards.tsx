@@ -27,7 +27,14 @@ PricingPlanCard.displayName = "PricingPlanCard";
 
 PricingPlanCard.Header = ({ title, description, popular }) => (
   <div>
-    <p className="text-body-18 text-neutral-1">{title} {popular && (<span className="ml-2 bg-green-400 px-3 py-1.5 rounded-3xl text-neutral-1 text-body-14">Popular</span>)}</p>
+    <p className="text-body-18 text-neutral-1">
+      {title}{" "}
+      {popular && (
+        <span className="ml-2 bg-green-400 px-3 py-1.5 rounded-3xl text-neutral-1 text-body-14">
+          Popular
+        </span>
+      )}
+    </p>
     <p className="text-body-14 text-neutral-2 mt-1">{description}</p>
     <hr className="mt-[20px] border-gray-600 mb-5" />
   </div>

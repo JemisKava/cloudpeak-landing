@@ -14,7 +14,6 @@ const Faq = () => {
   return (
     <section className="max-w-screen-xl mx-auto mt-[120px] md:mx-[120px] sm:mx-[30px]">
       <div className="w-full flex justify-between gap-6 md:flex-col md:gap-6 sm:flex-col sm:gap-6">
-
         {/* Left content: Title and description */}
         <div className="w-6/12 md:w-full md:text-center space-y-4 sm:w-full sm:text-center">
           <h2 className="text-neutral-1 text-h2 tracking-wide sm:text-h2-40">
@@ -38,7 +37,6 @@ const Faq = () => {
             />
           ))}
         </div>
-
       </div>
     </section>
   );

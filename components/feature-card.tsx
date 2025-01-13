@@ -4,7 +4,7 @@ import { Metric } from "./metric";
 import { FeatureList } from "./feature-list";
 import Card from "./card";
 import { cn } from "@/lib/utils";
-import * as motion from "motion/react-client"
+import * as motion from "motion/react-client";
 
 export function FeatureCard({
   title,
@@ -21,7 +21,7 @@ export function FeatureCard({
         viewport={{ once: true, amount: 0.3 }}
         transition={{
           duration: 0.7,
-          ease: [0.25, 0.1, 0.25, 1]
+          ease: [0.25, 0.1, 0.25, 1],
         }}
         className="relative flex flex-col flex-nowrap gap-2.5 h-full mx-[15px] my-1 overflow-hidden sm:mx-0"
       >

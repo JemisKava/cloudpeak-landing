@@ -25,4 +25,4 @@ const LestCard = ({ title, logo, description }: LestCardProps) => (
   </Card>
 );
 
-export default LestCard 
+export default LestCard;
