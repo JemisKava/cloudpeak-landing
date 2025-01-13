@@ -1,6 +1,7 @@
 import { NAV_LINKS } from '@/constants'
 import { Menu } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 // TODO: add moobile menu
@@ -9,9 +10,11 @@ const Header = () => {
     <div className='bg-[#05071acc] sticky top-0 left-0 right-0 z-50 backdrop-blur-sm'>
       <nav className='h[119px] py-8 flex items-center justify-between max-w-screen-xl mx-auto md:px-6 sm:px-4 sm:justify-around '>
         {/* logo */}
-        <div>
-          <Image src={'/assets/logo.svg'} alt='logo' width={203} height={57} />
-        </div>
+        <Link href={'/'}>
+          <div>
+            <Image src={'/assets/logo.svg'} alt='logo' width={203} height={57} />
+          </div>
+        </Link>
 
         {/* nav links */}
         <div className='sm:hidden'>

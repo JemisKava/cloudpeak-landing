@@ -4,7 +4,7 @@ import { FeatureCard } from '../feature-card'
 
 const Features = () => {
   return (
-    <section className='py-[130px] px-[30px] mt-8'>
+    <section className='py-[130px] px-[30px] mt-8' id='features'>
       <div className='max-w-screen-xl mx-auto text-center'>
         <div className='flex flex-col gap-y-4 mx-60 sm:mx-0 md:mx-0 items-center'>
           <h1 className='text-h2 text-neutral-1 sm:text-h2-40'>
