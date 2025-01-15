@@ -25,7 +25,7 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: "easeInOut" }}
           className="bg-[#161B33]/60 border border-[#1c244c] inline-block rounded-full px-6 py-2 shadow-lg backdrop-blur-sm"
         >
-          <p className="text-sm text-gray-300">
+          <p className="text-sm text-gray-300 shadow-custom-inset">
             New version available. Download now!
           </p>
         </motion.div>

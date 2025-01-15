@@ -14,7 +14,7 @@ const Testimonials = () => {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.8, ease: "easeInOut" }}
         viewport={{ once: true, amount: 0.3 }}
-        className="space-y-4 text-center mt-[120px] mb-[60px]"
+        className="space-y-4 text-center mt-[120px] mb-[60px] sm:mt-[60px]"
       >
         <h1 className="text-h2 text-neutral-1 sm:text-2xl">
           Trusted by 14,000+ users
