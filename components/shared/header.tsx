@@ -1,11 +1,13 @@
+"use client";
 import { NAV_LINKS } from "@/constants";
-import { Menu } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import { useState } from "react";
+import MobileMenu from "../mobile-menu";
 
-// TODO: add moobile menu
 const Header = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <div className="bg-[#05071acc] sticky top-0 left-0 right-0 z-50 backdrop-blur-sm">
       <nav className="h[119px] py-8 flex items-center justify-between max-w-screen-xl mx-auto md:px-6 sm:px-4 sm:justify-around ">
@@ -39,10 +41,11 @@ const Header = () => {
           </button>
         </div>
 
-        {/* mobile menu */}
-        <div className="hidden sm:block">
-          <Menu height={40} width={40} />
-        </div>
+        {/* Mobile Menu Component */}
+        <MobileMenu
+          isOpen={isMobileMenuOpen}
+          onToggle={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        />
       </nav>
     </div>
   );
