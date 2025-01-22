@@ -36,7 +36,7 @@ export function FeatureCard({
         <div className="relative z-10">
           <div className="text-start p-2">
             <h2 className="text-h3 text-neutral-1 mb-2 sm:text-h4">{title}</h2>
-            <p className="text-gray-600 mb-6">{description}</p>
+            <p className="text-neutral-2 mb-6">{description}</p>
           </div>
           <Metric {...metric} />
           {integrationIcons && (
